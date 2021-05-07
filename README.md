@@ -32,7 +32,7 @@ python habitat_baselines/run.py --run-type=train --exp-config habitat_baselines/
 
 ## Pretrained Weights
 
-The pretrained CRL model from matterport can be downloaded from [here](https://www.dropbox.com/s/gwxm4x4a1fnloz2/curiosity_pointnav_pretrain.16.pth?dl=0)
+The pretrained CRL model from Matterport3D can be downloaded from [here](https://www.dropbox.com/s/gwxm4x4a1fnloz2/curiosity_pointnav_pretrain.16.pth?dl=0)
 
 ## Citing Our Paper
 
