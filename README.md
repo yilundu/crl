@@ -1,7 +1,7 @@
 Curious Representation Learning for Embodied Intelligence
 ==============================
 
-This is the pytorch code for the paper [Curious Representation Learning for Embodied Intelligence](https://arxiv.org/pdf/2105.01060.pdf). This codebase is based on the codebase from Habitat-lab, please see HABITAT\_README.md for installation instructions for the repository.
+This is the pytorch code for the paper [Curious Representation Learning for Embodied Intelligence](https://arxiv.org/pdf/2105.01060.pdf). This codebase is based on the codebase from Habitat-lab, please see [HABITAT\_README.md](https://github.com/yilundu/crl/blob/master/HABITAT_README.md) for installation instructions for the repository.
 
 ## Interactive Pretraining of Embodied Agents
 
@@ -36,7 +36,7 @@ The pretrained CRL model from the Matterport3D environment can be downloaded fro
 
 ## Citing Our Paper
 
-If you find our code useful for your research, please consider citing the following [paper](https://arxiv.org/pdf/2105.01060.pdf), as well as papers included in HABITAT\_README.md..
+If you find our code useful for your research, please consider citing the following [paper](https://arxiv.org/pdf/2105.01060.pdf), as well as papers included in [HABITAT\_README.md](https://github.com/yilundu/crl/blob/master/HABITAT_README.md).
 
 ```	
 @article{du2021curious,
