@@ -1,0 +1,66 @@
+# Note:  Hyperparameters have been changed slightly from
+# the paper to allow for things to easily run on 1 GPU
+
+BASE_TASK_CONFIG_PATH: "configs/tasks/imagenav_gibson.yaml"
+TRAINER_NAME: "ppo"
+ENV_NAME: "NavRLEnv"
+SIMULATOR_GPU_ID: 1
+TORCH_GPU_ID: 0
+VIDEO_OPTION: []
+# Can be uncommented to generate videos.
+# VIDEO_OPTION: ["disk", "tensorboard"]
+TENSORBOARD_DIR: "checkpoints_imagenav/pointnav_pretrain_gibson_imagenav_policy_3"
+LOG_FILE: "checkpoints_imagenav/pointnav_pretrain_gibson_imagenav_policy_3"
+VIDEO_DIR: "checkpoints_imagenav/pointnav_pretrain_gibson_imagenav_policy_3"
+# Evaluate on all episodes
+TEST_EPISODE_COUNT: -1
+EVAL_CKPT_PATH_DIR: "checkpoints_imagenav/pointnav_pretrain_gibson_imagenav_policy_3"
+# This was 6 for mp3d and 8 for gibson in the paper
+# Note:  To train the an RGB only model,
+# you may need to use 8 processes with 4 mini batches,
+# If so, the number of updates should be cut in half
+NUM_ENVIRONMENTS: 6
+SENSORS: ["RGB_SENSOR"]
+CHECKPOINT_FOLDER: "checkpoints_imagenav/pointnav_pretrain_gibson_imagenav_policy_3"
+NUM_UPDATES: 80001
+LOG_INTERVAL: 50
+CHECKPOINT_INTERVAL: 1000
+RESUME_CURIOUS: '/private/home/yilundu/sandbox/habitat/habitat-lab/checkpoints/baseline_pointnav_resnet50_301/baseline_pointnav_pretrain/baseline_pointnav_pretrain.16.pth'
+policy: True
+log_env: False
+
+RL:
+  SUCCESS_REWARD: 2.5
+  SLACK_REWARD: -1e-4
+  PPO:
+    # ppo params
+    clip_param: 0.1
+    ppo_epoch: 2
+    # This was 4 in the paper
+    num_mini_batch: 2
+    value_loss_coef: 0.5
+    entropy_coef: 0.01
+    lr: 5e-5
+    eps: 1e-5
+    max_grad_norm: 0.5
+    num_steps: 64
+    hidden_size: 512
+    use_gae: True
+    gamma: 0.99
+    tau: 0.95
+    use_linear_clip_decay: False
+    use_linear_lr_decay: False
+    use_normalized_advantage: False
+    reward_window_size: 50
+    curiosity: False
+    rnd: False
+    byol: False
+    atc: False
+    random: False
+    count: False
+    RESUME_DETACH: True
+    IMAGENET: False
+
+UNSUP:
+    CONTRASTIVE:
+        updates: 0

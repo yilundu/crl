@@ -1,0 +1,5 @@
+mp3d_root = ""
+gibson_root = ""
+doom_root = ""
+places_root =  ""
+oblige_root = ""

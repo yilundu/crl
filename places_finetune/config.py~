@@ -1,0 +1,5 @@
+mp3d_root = "/private/home/yilundu/mp3d"
+gibson_root = "/private/home/yilundu/gibson"
+doom_root = "/private/home/yilundu/doom.npz"
+places_root =  "/datasets01/places205/121517/pytorch/"
+oblige_root = "/tmp/"
