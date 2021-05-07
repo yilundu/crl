@@ -1,7 +1,7 @@
 Curious Representation Learning for Embodied Intelligence
 ==============================
 
-This is the pytorch code for the paper Curious Representation Learning for Embodied Intelligence. This codebase is based on the codebase from Habitat-lab, please see HABITAT\_README.md for installation instructions for the repository.
+This is the pytorch code for the paper [Curious Representation Learning for Embodied Intelligence](https://arxiv.org/pdf/2105.01060.pdf). This codebase is based on the codebase from Habitat-lab, please see HABITAT\_README.md for installation instructions for the repository.
 
 ## Interactive Pretraining of Embodied Agents
 
