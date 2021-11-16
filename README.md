@@ -38,13 +38,14 @@ The pretrained CRL model from the Matterport3D environment can be downloaded fro
 
 If you find our code useful for your research, please consider citing the following [paper](https://arxiv.org/pdf/2105.01060.pdf), as well as papers included in [HABITAT\_README.md](https://github.com/yilundu/crl/blob/master/HABITAT_README.md).
 
-```	
-@article{du2021curious,
+```		
+@inproceedings{du2021curious,
     author = {Du, Yilun and Gan, Chuang and
     Isola, Phillip},
     title = {Curious Representation Learning
     for Embodied Intelligence},
-    journal = {arXiv preprint arXiv:2105.01060},
+    booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
     year = {2021}
 }
+
 ```
